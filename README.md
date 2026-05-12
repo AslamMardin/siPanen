@@ -53,3 +53,11 @@ Berikut adalah simulasi jika Anda adalah seorang Petugas yang sedang mengisi lap
 - **Keterangan:** `Panen berjalan lancar, 0,5 Ha lahan mengalami gagal panen akibat kekeringan.` *(Opsional)*
 
 Setelah form di atas lengkap, Petugas tinggal menekan tombol **"Kirim untuk Validasi"** agar data segera dicek oleh Admin.
+
+## 📸 Screenshots
+
+- **Dashboard Admin**: ![Dashboard Admin](ss/dashboad.png)
+- **Formulir Panen**: ![Formulir Panen](ss/formulir panen.png)
+- **Laporan Panen**: ![Laporan Panen](ss/laporan panen.png)
+- **Halaman Login**: ![Login](ss/login.png)
+- **Manajemen Pengguna**: ![Pengguna](ss/pengguna.png)
