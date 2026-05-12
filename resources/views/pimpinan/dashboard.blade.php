@@ -9,7 +9,7 @@
     </div>
     <div>
         <a href="{{ route('pimpinan.dashboard.pdf', request()->query()) }}" class="btn btn-danger btn-sm" target="_blank">
-            <i class="bi bi-file-earmark-pdf me-1"></i> Unduh Laporan PDF
+            <i class="bi bi-file-earmark-pdf me-1"></i> Lihat Laporan PDF
         </a>
     </div>
 </div>

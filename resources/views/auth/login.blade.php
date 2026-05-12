@@ -66,8 +66,6 @@
 <body>
     <div class="login-card card">
         <div class="login-header">
-            <div class="logo-icon"><i class="bi bi-basket2-fill"></i></div>
-            <h4 class="fw-bold mb-0">SiPanen</h4>
             <p class="mb-0 small opacity-75">Sistem Informasi Pelaporan Hasil Panen Padi</p>
             <p class="mb-0 small opacity-60">Dinas Pertanian Kab. Polewali Mandar</p>
         </div>

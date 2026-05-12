@@ -9,7 +9,7 @@
         </div>
         <div class="d-flex align-items-center gap-3">
             <a href="{{ route('admin.dashboard.pdf') }}" class="btn btn-danger btn-sm" target="_blank">
-                <i class="bi bi-file-earmark-pdf me-1"></i> Unduh Laporan PDF
+                <i class="bi bi-file-earmark-pdf me-1"></i> Lihat Laporan PDF
             </a>
             <span class="text-muted small">{{ now()->isoFormat('dddd, D MMMM Y') }}</span>
         </div>

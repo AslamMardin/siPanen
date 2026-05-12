@@ -94,6 +94,6 @@ class DashboardController extends Controller
             'stats', 'produksiPerKecamatan', 'tahun', 'musim_tanam'
         ));
 
-        return $pdf->download('Laporan_Panen_Pimpinan_'.$tahun.'.pdf');
+        return $pdf->stream('Laporan_Panen_Pimpinan_'.$tahun.'.pdf');
     }
 }
