@@ -57,7 +57,7 @@ Setelah form di atas lengkap, Petugas tinggal menekan tombol **"Kirim untuk Vali
 ## 📸 Screenshots
 
 - **Dashboard Admin**: ![Dashboard Admin](ss/dashboad.png)
-- **Formulir Panen**: ![Formulir Panen](ss/formulir panen.png)
-- **Laporan Panen**: ![Laporan Panen](ss/laporan panen.png)
+- **Formulir Panen**: ![Formulir Panen](ss/formulir%20panen.png)
+- **Laporan Panen**: ![Laporan Panen](ss/laporan%20panen.png)
 - **Halaman Login**: ![Login](ss/login.png)
 - **Manajemen Pengguna**: ![Pengguna](ss/pengguna.png)
