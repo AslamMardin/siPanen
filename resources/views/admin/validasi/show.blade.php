@@ -35,6 +35,10 @@
                             <label class="form-label text-muted small mb-1">Musim Tanam</label>
                             <div class="fw-semibold">{{ $laporan->musim_tanam }} {{ $laporan->tahun }}</div>
                         </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small mb-1">Tanggal Panen</label>
+                            <div class="fw-semibold">{{ optional($laporan->tanggal_panen)->isoFormat('D MMMM Y') }}</div>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">

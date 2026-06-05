@@ -21,6 +21,10 @@
                 <div class="fw-semibold">{{ $laporan->musim_tanam }} {{ $laporan->tahun }}</div>
             </div>
             <div class="col-md-6">
+                <div class="text-muted small mb-1">Tanggal Panen</div>
+                <div class="fw-semibold">{{ optional($laporan->tanggal_panen)->isoFormat('D MMMM Y') }}</div>
+            </div>
+            <div class="col-md-6">
                 <div class="text-muted small mb-1">Varietas Padi</div>
                 <div class="fw-semibold">{{ $laporan->varietas_padi }}</div>
             </div>

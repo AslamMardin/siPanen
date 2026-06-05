@@ -12,6 +12,7 @@ class LaporanPanen extends Model
         'desa_id',
         'musim_tanam',
         'tahun',
+        'tanggal_panen',
         'luas_tanam',
         'luas_panen',
         'produksi',
@@ -25,6 +26,7 @@ class LaporanPanen extends Model
 
     protected $casts = [
         'validated_at' => 'datetime',
+        'tanggal_panen' => 'date',
         'luas_tanam'   => 'decimal:2',
         'luas_panen'   => 'decimal:2',
         'produksi'     => 'decimal:2',

@@ -47,6 +47,13 @@
                 </div>
 
                 <div class="col-md-6">
+                    <label class="form-label fw-semibold">Tanggal Panen <span class="text-danger">*</span></label>
+                    <input type="date" name="tanggal_panen" class="form-control @error('tanggal_panen') is-invalid @enderror"
+                           value="{{ old('tanggal_panen', date('Y-m-d')) }}" required>
+                    @error('tanggal_panen')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                </div>
+
+                <div class="col-md-6">
                     <label class="form-label fw-semibold">Luas Tanam (ha) <span class="text-danger">*</span></label>
                     <input type="number" name="luas_tanam" class="form-control @error('luas_tanam') is-invalid @enderror"
                            value="{{ old('luas_tanam') }}" step="0.01" min="0.01" required>
