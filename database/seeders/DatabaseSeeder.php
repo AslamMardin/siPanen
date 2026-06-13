@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Desa;
 use App\Models\Kecamatan;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -104,6 +105,9 @@ class DatabaseSeeder extends Seeder
                     $produksi = $luasPanen * (rand(50, 80) / 10);
 
                     $sts = $status[array_rand($status)];
+
+                    $panenMonth = rand(4, 6);
+                    $tanggalPanen = Carbon::create(date('Y'), $panenMonth, rand(1, Carbon::create(date('Y'), $panenMonth, 1)->daysInMonth))->toDateString();
                     
                     \App\Models\LaporanPanen::create([
                         'user_id' => $petugas->id,
@@ -111,6 +115,7 @@ class DatabaseSeeder extends Seeder
                         'desa_id' => $desa->id,
                         'musim_tanam' => $musim[array_rand($musim)],
                         'tahun' => date('Y'),
+                        'tanggal_panen' => $tanggalPanen,
                         'luas_tanam' => $luasTanam,
                         'luas_panen' => $luasPanen,
                         'produksi' => $produksi,
