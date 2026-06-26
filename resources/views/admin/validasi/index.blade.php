@@ -8,17 +8,20 @@
 
 {{-- Filter --}}
 <div class="card border-0 shadow-sm mb-3">
-    <div class="card-body py-2">
+    <div class="card-body py-2 d-flex justify-content-between align-items-center flex-wrap">
         <form method="GET" class="d-flex gap-2 align-items-center flex-wrap">
             <label class="small fw-semibold mb-0">Status:</label>
             <select name="status" class="form-select form-select-sm" style="width:auto">
                 <option value="">Semua</option>
                 <option value="menunggu_validasi" {{ request('status') === 'menunggu_validasi' ? 'selected' : '' }}>Menunggu Validasi</option>
-                <option value="disetujui" {{ request('status') === 'disetujui' ? 'selected' : '' }}>Disetujui</option>
-                <option value="ditolak" {{ request('status') === 'ditolak' ? 'selected' : '' }}>Ditolak</option>
+                <option value="disetujui" {{ request('status') === 'disetujui' ? 'selected' : '' }}>Sesuai</option>
+                <option value="ditolak" {{ request('status') === 'ditolak' ? 'selected' : '' }}>Tidak Sesuai</option>
             </select>
             <button class="btn btn-sm btn-outline-success">Filter</button>
         </form>
+        <a href="{{ route('admin.validasi.create') }}" class="btn btn-sm btn-primary">
+            <i class="bi bi-plus-lg"></i> Tambah Laporan
+        </a>
     </div>
 </div>
 

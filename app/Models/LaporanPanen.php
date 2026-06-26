@@ -42,8 +42,8 @@ class LaporanPanen extends Model
     public static array $statusLabel = [
         'draft'              => 'Draft',
         'menunggu_validasi'  => 'Menunggu Validasi',
-        'disetujui'          => 'Disetujui',
-        'ditolak'            => 'Ditolak',
+        'disetujui'          => 'Sesuai',
+        'ditolak'            => 'Tidak Sesuai',
     ];
 
     public static array $statusBadge = [

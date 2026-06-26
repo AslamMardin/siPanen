@@ -38,6 +38,20 @@ Aplikasi ini memiliki 3 tingkatan pengguna dengan peran yang berbeda-beda:
 
 ---
 
+## 📊 Fitur Analisis Dashboard Admin
+
+Dashboard Admin dirancang dengan konsep **"Dari Ringkasan ke Rincian"**, menceritakan kondisi pertanian dari berbagai sudut pandang waktu, wilayah, dan musim. Berikut komponen utama analisis yang ada di dalamnya:
+
+1. **Kartu Pertumbuhan (YoY Growth):** Menampilkan perbandingan performa total panen tahun berjalan dengan tahun sebelumnya dalam bentuk persentase. Panah hijau ke atas menandakan kenaikan produksi, sedangkan panah merah ke bawah menandakan penurunan.
+2. **Kartu Kontribusi Musim Terakhir:** Membantu admin melihat hasil panen musim tanam yang baru saja/sedang berjalan, lengkap dengan persentase seberapa besar musim tersebut menyumbang bagi total target produksi di tahun ini.
+3. **Total Hasil Panen Pertahun (Bar Chart):** Grafik khusus (*dedicated*) untuk melihat tren total produksi per tahun secara historis dari tahun ke tahun.
+4. **Perbandingan Musim per Tahun (Combo Chart):** Grafik yang memperlihatkan dan membedakan produksi Musim Hujan dan Musim Kemarau di setiap tahunnya secara berdampingan, memudahkan analisa musim apa yang mendominasi.
+5. **Proporsi Musim Tahun Ini (Doughnut Chart):** Khusus menyorot persentase porsi (share) masing-masing musim khusus di tahun berjalan saja.
+6. **Tabel Ringkasan (Year-To-Date):** Tabel data numerik riil untuk dilaporkan/dikutip ke dalam press release atau dokumen formal pemerintah.
+7. **Produksi Per Kecamatan:** Memetakan produktivitas masing-masing wilayah untuk distribusi bantuan sumber daya secara tepat sasaran.
+
+---
+
 ## 📝 Contoh Pengisian Formulir Laporan Panen (Bagi Petugas)
 
 Berikut adalah simulasi jika Anda adalah seorang Petugas yang sedang mengisi laporan melalui halaman `laporan/create`:

@@ -36,6 +36,8 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:admin'])->grou
     // Validasi Laporan
     Route::prefix('validasi')->name('validasi.')->group(function () {
         Route::get('/', [ValidasiController::class, 'index'])->name('index');
+        Route::get('/create', [ValidasiController::class, 'create'])->name('create');
+        Route::post('/', [ValidasiController::class, 'store'])->name('store');
         Route::get('/{laporan}', [ValidasiController::class, 'show'])->name('show');
         Route::patch('/{laporan}/setujui', [ValidasiController::class, 'setujui'])->name('setujui');
         Route::patch('/{laporan}/tolak', [ValidasiController::class, 'tolak'])->name('tolak');

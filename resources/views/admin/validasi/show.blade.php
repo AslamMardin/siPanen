@@ -83,13 +83,13 @@
                     <form method="POST" action="{{ route('admin.validasi.setujui', $laporan) }}">
                         @csrf @method('PATCH')
                         <button type="submit" class="btn btn-success"
-                                onclick="return confirm('Setujui laporan ini?')">
-                            <i class="bi bi-check-lg me-1"></i> Setujui Laporan
+                                onclick="return confirm('Nyatakan laporan ini sesuai?')">
+                            <i class="bi bi-check-lg me-1"></i> Sesuai
                         </button>
                     </form>
 
                     <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#tolakForm">
-                        <i class="bi bi-x-lg me-1"></i> Tolak Laporan
+                        <i class="bi bi-x-lg me-1"></i> Tidak Sesuai
                     </button>
                 </div>
 
@@ -114,7 +114,7 @@
     @if($laporan->validator)
     <div class="col-12">
         <div class="alert alert-{{ $laporan->status === 'disetujui' ? 'success' : 'danger' }} mb-0">
-            <strong>{{ $laporan->status === 'disetujui' ? 'Disetujui' : 'Ditolak' }}</strong>
+            <strong>{{ $laporan->status === 'disetujui' ? 'Sesuai' : 'Tidak Sesuai' }}</strong>
             oleh {{ $laporan->validator->name }}
             pada {{ $laporan->validated_at->isoFormat('D MMMM Y, HH:mm') }}
             @if($laporan->catatan_penolakan)
